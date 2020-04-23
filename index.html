@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho1</title>
+    <script type="text/javascript" src="stack.js"></script>
+    <script type="text/javascript" src="Queue.js"></script>
+</head>
+<body>
+    <script>
+        let pilha = new Stack();
+        let fila = new Queue();
+
+        pilha.Inserir(1);
+        pilha.Inserir(2);
+        pilha.Inserir(3);
+
+        fila.Inserir(1);
+        fila.Inserir(2);
+        fila.Inserir(3);
+
+
+        let itemPilha = pilha.RemoverUltimo();
+        let itemFila = fila.RemoverPrimeiro();
+        alert(`Último item removido da Pilha: ${itemPilha}
+Primeiro item removido da Fila: ${itemFila}`);
+    </script>
+</body>
+</html>
